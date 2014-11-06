@@ -1,0 +1,30 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "jiri@kratochvil.eu",
+    "longName": "QuickCheck",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/icon-widget-type-loan@2x.png",
+                "name": "ICON_LOAN",
+                "type": "png"
+            },
+            {
+                "file": "images/icon-widget-type-account@2x.png",
+                "name": "ICON_ACCOUNT",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "QuickCheck",
+    "uuid": "01e89a85-3d58-4862-ab19-0bb8f71fdea4",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
