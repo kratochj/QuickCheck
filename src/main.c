@@ -5,6 +5,9 @@
   
 #define NUM_MENU_ICONS 2
 
+#define ICON_INDEX_ACCOUNT 0
+#define ICON_INDEX_LOAN 1
+
 
 static Window *window;
 static MenuLayer *menu_layer;
@@ -45,23 +48,23 @@ static void menu_draw_row_callback(GContext* ctx, const Layer *cell_layer, MenuI
       switch (cell_index->row) {
         case 0:
           // Ikony: menu_icons[current_icon]
-          menu_cell_basic_draw(ctx, cell_layer, "Osobni ucet CS", "Zustatek: 32 123,- Kc", menu_icons[0]);
+          menu_cell_basic_draw(ctx, cell_layer, "Osobni ucet CS", "32 123,21 Kc", menu_icons[ICON_INDEX_ACCOUNT]);
           break;
 
         case 1:
-          menu_cell_basic_draw(ctx, cell_layer, "Hypotecni uver", "Zustatek: XXXXX,- Kc", menu_icons[1]);
+          menu_cell_basic_draw(ctx, cell_layer, "Hypotecni uver", "2 124 012,56 Kc", menu_icons[ICON_INDEX_LOAN]);
           break;
 
         case 2:
-          menu_cell_basic_draw(ctx, cell_layer, "Kreditni karta", "Zustatek: XXXXXX,- Kc", menu_icons[1]);
+          menu_cell_basic_draw(ctx, cell_layer, "Kreditni karta", "50 000,00 Kc", menu_icons[ICON_INDEX_LOAN]);
           break;
 
         case 3:
-          menu_cell_basic_draw(ctx, cell_layer, "Cizomenovy ucet", "Zustatek: XXXXXX,- Kc", menu_icons[0]);
+          menu_cell_basic_draw(ctx, cell_layer, "Cizomenovy ucet", "3 500,11 USD", menu_icons[ICON_INDEX_ACCOUNT]);
           break;
 
         case 4:
-          menu_cell_basic_draw(ctx, cell_layer, "Sporici ucet", "Zustatek: XXXXXX,- Kc", menu_icons[0]);
+          menu_cell_basic_draw(ctx, cell_layer, "Sporici ucet", "268 327,00 Kc", menu_icons[ICON_INDEX_ACCOUNT]);
           break;
 
       }
