@@ -9,17 +9,19 @@
     "resources": {
         "media": [
             {
-                "file": "images/icon-widget-type-loan@2x.png",
-                "name": "ICON_LOAN",
+                "file": "images/icon-widget-type-account@2x.png",
+                "name": "ICON_ACCOUNT",
                 "type": "png"
             },
             {
-                "file": "images/icon-widget-type-account@2x.png",
-                "name": "ICON_ACCOUNT",
+                "file": "images/icon-widget-type-loan@2x.png",
+                "menuIcon": true,
+                "name": "ICON_LOAN",
                 "type": "png"
             }
         ]
     },
+    "sdkVersion": "2",
     "shortName": "QuickCheck",
     "uuid": "01e89a85-3d58-4862-ab19-0bb8f71fdea4",
     "versionCode": 1,
